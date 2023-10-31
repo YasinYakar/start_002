@@ -5,8 +5,12 @@ import "time"
 
 func monday() {
 
-today:= time.Now
-switch today
+today:= time.Now().Weekday()
+switch time.Monday() {
+
+case today+0:
+
+}
 
 
 
